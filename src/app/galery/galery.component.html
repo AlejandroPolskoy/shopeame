@@ -1,0 +1,7 @@
+<div class="galery_top">
+    <div>Listado de productos ({{products.length}})</div>
+    <div><input type="text" placeholder="Buscador" [(ngModel)]="find" (input)="buscar()"></div>
+</div>
+<div class="galery">
+    <app-card [product]="product" *ngFor="let product of products"></app-card>
+</div>

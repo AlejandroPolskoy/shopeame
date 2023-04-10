@@ -1,0 +1,21 @@
+.form {
+    display: flex;
+    justify-content: space-around;
+
+    &_text {
+        width: 400px;
+    }
+    &_article {
+        margin-bottom: 10px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 6px;
+    }
+}
+.form_separator {
+    width: 2px;
+    background-color: #F89F21;
+    border-radius: 2px;
+}

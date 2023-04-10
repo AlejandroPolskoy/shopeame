@@ -1,0 +1,13 @@
+<div class="card">
+    <img src="{{product.image}}">
+    <p>{{product.description}}</p>
+    <div class="card_price">{{product.price}}</div>
+    <p>{{product.name}}</p>
+    <div class="card_bottom">
+        <div class="card_stars"></div>
+        <div class="card_buttons" *ngIf="!preview">
+            <a href="/edit/{{product.id}}">Editar</a>
+            <a href="javascript: void(0)" (click)="borrar( product.id )">Borrar</a>
+        </div>
+    </div>
+</div>

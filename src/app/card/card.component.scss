@@ -1,0 +1,26 @@
+.card {
+    width: 258px;
+    padding: 16px;
+    font-family: 'Inter';
+    color: #19191D;
+    gap: 16px;
+
+    img {
+        width: 226px;
+        margin: 0 auto;
+    }
+
+    &_price {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    &_price::before {
+        content: "$";
+    }
+}
+
+.card_buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 10px;
+}

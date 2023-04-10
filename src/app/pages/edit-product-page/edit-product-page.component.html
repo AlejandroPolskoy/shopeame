@@ -1,0 +1,31 @@
+<div class="form">
+    <div>
+        <div class="form_article">
+            <label>Nombre del producto:</label>
+            <input class="form_text" type="text" name="name" placeholder="Por ej: Tiesto para planta" [(ngModel)]="product.name"/>
+        </div>
+        <div class="form_article">
+            <label>Precio:</label>
+            <input class="form_text" type="text" name="price" placeholder="Por ej: 9.50" [(ngModel)]="product.price"/>
+        </div>
+        <div class="form_article">
+            <label>Descripcion:</label>
+            <input class="form_text" type="text" name="descripction" placeholder="Por ej: Lo mas vendido este mes" [(ngModel)]="product.description"/>
+        </div>
+        <div class="form_article">
+            <label>Ruta de la imagen:</label>
+            <input class="form_text" type="text" name="image" placeholder="Por ej: http://blabla.com/img.jpg" [(ngModel)]="product.image"/>
+        </div>
+        <div class="form_article">
+            <label>Opiniones:</label>
+            <input class="form_text" type="text" name="stars" placeholder="Por ej: 4.28" [(ngModel)]="product.stars"/>
+        </div>
+        <div>
+            <button (click)="guardarProducto()">Guardar</button>
+        </div>
+    </div>
+
+    <div class="form_separator"></div>
+
+    <app-card [product]="product" [preview]="true"></app-card>
+</div>
